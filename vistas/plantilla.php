@@ -140,6 +140,7 @@ $ruta = ControladorRuta::ctrRuta();
 
     <script src="plugins/summernote/summernote-bs4.min.js"></script>
 
+    <script src="plugins/sweetalert/sweetalert2.all.js"></script>
 
     <script src="plugins/sweetalert2/sweetalert2.all.js"></script>
 

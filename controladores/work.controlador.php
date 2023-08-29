@@ -44,11 +44,7 @@ class ControladorWorks{
 
 					$imagen = $times.".jpg";
 
-					$ruta = "vistas/img/works/".$imagen;
-
-					if (!file_exists($ruta)) {
-						mkdir($ruta, 0777, true);
-					};
+					$ruta = "vistas/img/works/".$imagen;			
 
 					$origen = imagecreatefromjpeg($_FILES["imagen"]["tmp_name"]);						
 
@@ -71,7 +67,7 @@ class ControladorWorks{
 
 					$imagen = $times.".png";
 
-					$ruta = "vistas/img/works/".$times.".png";
+					$ruta = "vistas/img/works/".$imagen;
 
 					$origen = imagecreatefrompng($_FILES["imagen"]["tmp_name"]);						
 
@@ -175,7 +171,7 @@ class ControladorWorks{
 	}
 	
 	/**************************************
-	 SUBIR WORK
+	 MOSTRAR WORK
 	***************************************/
 	static public function ctrMostrarWorks(){
 		
@@ -192,36 +188,25 @@ class ControladorWorks{
 	***************************************/
 	static public function ctrBorrarWork(){
 
-		if(isset($_GET["idVideo"])){
+		if(isset($_GET["idWork"])){
 
-			$tabla ="videos";
+			$tabla ="works";
+
 			$item = "id";
-			$valor = $_GET["idVideo"];				
+			$valor = $_GET["idWork"];	
+			
+			unlink('vistas/videos/works/'.$_GET["rutaVideo"]); 
+			unlink('vistas/img/works/'.$_GET["rutaImagen"]);      
 
-			function rrmdir($dir) { 
-				if (is_dir($dir)) { 
-					$objects = scandir($dir); 
-					foreach ($objects as $object) { 
-					if ($object != "." && $object != "..") { 
-						if (filetype($dir."/".$object) == "dir") rrmdir($dir."/".$object); else unlink($dir."/".$object); 
-					} 
-					} 
-					reset($objects); 
-					rmdir($dir); 
-				} 
-				} 
-
-				unlink('vistas/videos/'.$_GET["rutaVideo"]);      
-
-			$respuesta = ModeloVideos::mdlBorrarVideo($tabla, $item, $valor);
+			$respuesta = ModeloWorks::mdlBorrarWork($tabla, $item, $valor);
 
 			if($respuesta == "ok"){
 
 				echo '<script>  
 				
 				swal({
-					title: "Video eliminado!",
-					text: "El Video fue borrado satisfactoriamente!",
+					title: "Work eliminado!",
+					text: "El Work fue borrado satisfactoriamente!",
 					type: "success",
 					icon: "success"
 				}).then(function() {

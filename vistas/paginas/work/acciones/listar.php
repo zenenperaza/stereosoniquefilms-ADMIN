@@ -59,18 +59,18 @@
                                     <div class="row justify-content-center">
                                         <div class="col-sm-6 ">
                                             <video id="" class="video" controls poster="" >
-                                                <source src="<?php echo $ruta?>vistas/videos/<?php echo $work["video"]?>" type="video/mp4">
-                                                <source src="<?php echo $ruta?>vistas/videos/<?php echo $work["video"]?>" type="video/webm">   
-                                                <source src="<?php echo $ruta?>vistas/videos/<?php echo $work["video"]?>" type='video/mpg; codecs="avc1.42E01E, mp4a.40.2"'>                          
-                                                <source src="<?php echo $ruta?>vistas/videos/<?php echo $work["video"]?>" type='video/mpeg; codecs="avc1.42E01E, mp4a.40.2"'>
-                                                <source src="<?php echo $ruta?>vistas/videos/<?php echo $work["video"]?>" type="video/ogg">
+                                                <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type="video/mp4">
+                                                <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type="video/webm">   
+                                                <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type='video/mpg; codecs="avc1.42E01E, mp4a.40.2"'>                          
+                                                <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type='video/mpeg; codecs="avc1.42E01E, mp4a.40.2"'>
+                                                <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type="video/ogg">
                                             </video>
                                         </div>  
                                     </div>
                                 </td>
                                 <th><?php echo $work["fecha"]?></th>
                                 <td>
-                                    <button  type="button" class="btn btn-block btn-danger btn-sm eliminar-video btnEliminarWork" rutaVideo="<?php echo $video["video"]?>" idVideo="<?php echo $video["id"]?>">Eliminar video</button>                     
+                                    <button  type="button" class="btn btn-block btn-danger btn-sm  btnEliminarWork" rutaVideo="<?php echo $work["video"]?>" rutaImagen="<?php echo $work["imagen"]?>" id="<?php echo $work["id"]?>">Eliminar work</button>                     
                                 </td>
        
                                 </tr>

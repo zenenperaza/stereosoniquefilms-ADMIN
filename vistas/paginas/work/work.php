@@ -61,6 +61,10 @@ if(isset($routesArray[5])){
 <script src="js/jquery.js"></script>
 <script src="plugins/popper/popper.min.js"></script>
 
+
+
+<script src="plugins/sweetalert2/sweetalert2.all.js"></script>
+
 <script>
   $(function () {
     // Summernote
@@ -73,6 +77,9 @@ if(isset($routesArray[5])){
 
 $works = new ControladorWorks();
 $works -> ctrNuevoWork();
+
+$works = new ControladorWorks();
+$works -> ctrBorrarWork();
 
 
 
