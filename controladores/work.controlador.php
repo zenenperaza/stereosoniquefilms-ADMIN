@@ -1,23 +1,98 @@
 <?php
 
-class ControladorWork{
+class ControladorWorks{
 
     
 	/*=============================================
 				SUBIR WORK
 	=============================================*/  
-	static public function ctrSubirWork() {    
-    
+	static public function ctrNuevoWork() {     
 		  
-			 if(isset($_POST['btnSubirVideo'])){
-			   
-			   
-			   if(isset($_FILES["video"]["tmp_name"]) && !empty($_FILES["video"]["tmp_name"])){
+		if(isset($_POST['btnSubirWork'])){		
+		
+			// IMAGEN
+			if(isset($_FILES["imagen"]["tmp_name"])){
+
+				list($ancho, $alto) = getimagesize($_FILES["imagen"]["tmp_name"]);
+
+				$nuevoAncho = 500;
+				$nuevoAlto = 500;
+
+				/*=============================================
+				CREAMOS EL DIRECTORIO DONDE VAMOS A GUARDAR LA FOTO DEL USUARIO
+				=============================================*/
+
+				$directorio = "vistas/img/works/";
+
+				if (!file_exists($directorio)) {
+					mkdir($directorio, 0777, true);
+				};
+
+				
+
+				/*=============================================
+				DE ACUERDO AL TIPO DE IMAGEN APLICAMOS LAS FUNCIONES POR DEFECTO DE PHP
+				=============================================*/
+
+				if($_FILES["imagen"]["type"] == "image/jpeg"){
+
+					/*=============================================
+					GUARDAMOS LA IMAGEN EN EL DIRECTORIO
+					=============================================*/
+
+					$times = time();
+
+					$imagen = $times.".jpg";
+
+					$ruta = "vistas/img/works/".$imagen;
+
+					if (!file_exists($ruta)) {
+						mkdir($ruta, 0777, true);
+					};
+
+					$origen = imagecreatefromjpeg($_FILES["imagen"]["tmp_name"]);						
+
+					$destino = imagecreatetruecolor($nuevoAncho, $nuevoAlto);
+
+					imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
+
+					imagejpeg($destino, $ruta);
+
+				}
+				
+				
+				if($_FILES["imagen"]["type"] == "image/png"){
+
+					/*=============================================
+					GUARDAMOS LA IMAGEN EN EL DIRECTORIO
+					=============================================*/
+
+					$times = time();
+
+					$imagen = $times.".png";
+
+					$ruta = "vistas/img/works/".$times.".png";
+
+					$origen = imagecreatefrompng($_FILES["imagen"]["tmp_name"]);						
+
+					$destino = imagecreatetruecolor($nuevoAncho, $nuevoAlto);
+
+					imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
+
+					imagepng($destino, $ruta);
+
+				}
+
+			} 
+			
+			// VIDEO			   
+			if(isset($_FILES["video"]["tmp_name"]) && !empty($_FILES["video"]["tmp_name"])){
 				 
-				$micarpeta = "vistas/videos/";
-				   if (!file_exists($micarpeta)) {
-					   mkdir($micarpeta, 0777, true);
-				   };
+				$micarpeta = "vistas/videos/works/";
+
+				if (!file_exists($micarpeta)) {
+					mkdir($micarpeta, 0777, true);
+				};
 		 
 				 $maxsize = 70000000; // 70MB
 				 $nombre_file = $_FILES['video']['name'];
@@ -42,7 +117,7 @@ class ControladorWork{
 	
 						swal({
 							type: "success",
-							title: "Error al subir Video. Debe ser menor de 20mb",
+							title: "Error al subir Video. Debe ser menor de 70mb",
 							showConfirmButton: true,
 							confirmButtonText: "Cerrar"
 							}).then(function(result) {
@@ -55,56 +130,58 @@ class ControladorWork{
 	
 						</script>';
 					}else{
-						// Subir
-						if(move_uploaded_file($_FILES['video']['tmp_name'],$target_file)){
-						//    $nombreVideo = strtoupper ( $_POST["nombreVideo"] );
-							$tabla = "videos";
-							$video = $file_video;
-								
-						
-							$respuesta = ModeloVideos::mdlSubirVideo($tabla, $video);
-	
-						if($respuesta="ok"){
-	
-							echo '<script>
-	
-						swal({
-							type: "success",
-							title: "El video ha sido subido correctamente",
-							showConfirmButton: true,
-							confirmButtonText: "Cerrar"
-							}).then(function(result) {
-										if (result.value) {
-	
-												history.back();
-	
-	
-										}
-									})
-	
-						</script>';
-			
-						} 
-					
-	 
-						 }
-					 }
+				
+						move_uploaded_file($_FILES['video']['tmp_name'],$target_file);
+					 
+					}
 	 
 					 $error= "la extension del archivo es invalido.";
 				 } 
-			 }
-			 
-			 }
+			}
+
+			$tabla = "works";
+
+			$datos = array(
+				"titulo" => $_POST["titulo"],
+				"artista" => $_POST["artista"],
+				"informacion" => $_POST["informacion"],
+				"link" => $_POST["link"],
+				"imagen" => $imagen,
+				"video" => $file_video
+			);
+
+
+			$respuesta = ModeloWorks::mdlIngresarWork($tabla, $datos);
+			
+			if($respuesta == "ok"){
+
+				echo '<script>         
+						swal({
+							title: "Work agregado!",
+							text: "EL Work fue guardado satisfactoriamente!",
+							type: "success",
+							icon: "success",
+						}).then(function() {
+							window.location = "../work";
+						});
+						
+					</script>';
+
+			}
+
+		
+		
+		}
 	}
 	
 	/**************************************
 	 SUBIR WORK
 	***************************************/
-	static public function ctrMostrarWork(){
+	static public function ctrMostrarWorks(){
 		
-		$tabla = "videos";
+		$tabla = "works";
 
-		$respuesta = ModeloVideos::mdlMostrarVideos($tabla);
+		$respuesta = ModeloWorks::mdlMostrarWorks($tabla);
 
 		return $respuesta;
 

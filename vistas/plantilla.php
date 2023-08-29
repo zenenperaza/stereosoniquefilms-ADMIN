@@ -44,8 +44,11 @@ $ruta = ControladorRuta::ctrRuta();
     <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
     <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/fonts/font-awesome/css/font-awesome.css">
     <!-- Stylesheets & Fonts -->
+
+
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
 
 
 
@@ -128,8 +131,14 @@ $ruta = ControladorRuta::ctrRuta();
     <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
         <!--Plugins-->
     <script src="js/jquery.js"></script>
+
+    
+
+    
     <script src="js/plugins.js"></script>
     <script src="js/functions.js"></script>
+
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
 
 
     <script src="plugins/sweetalert2/sweetalert2.all.js"></script>

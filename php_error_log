@@ -1,0 +1,143 @@
+[29-Aug-2023 18:04:26 Europe/Berlin] PHP Warning:  include(acciones/listar.php): Failed to open stream: No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php on line 25
+[29-Aug-2023 18:04:26 Europe/Berlin] PHP Warning:  include(): Failed opening 'acciones/listar.php' for inclusion (include_path='D:\xampp82\php\PEAR') in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php on line 25
+[29-Aug-2023 18:04:39 Europe/Berlin] PHP Warning:  include(acciones/listar.php): Failed to open stream: No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php on line 25
+[29-Aug-2023 18:04:39 Europe/Berlin] PHP Warning:  include(): Failed opening 'acciones/listar.php' for inclusion (include_path='D:\xampp82\php\PEAR') in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php on line 25
+[29-Aug-2023 18:05:18 Europe/Berlin] PHP Warning:  include(acciones/listar.php): Failed to open stream: No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php on line 25
+[29-Aug-2023 18:05:18 Europe/Berlin] PHP Warning:  include(): Failed opening 'acciones/listar.php' for inclusion (include_path='D:\xampp82\php\PEAR') in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php on line 25
+[29-Aug-2023 19:31:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorWorks" not found in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php:74
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(21): ControladorPlantilla->ctrPlantilla()
+#3 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php on line 74
+[29-Aug-2023 19:36:37 Europe/Berlin] PHP Warning:  mkdir(): File exists in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 27
+[29-Aug-2023 19:36:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php:70
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php(75): ControladorWorks::ctrNuevoWork()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(24): ControladorPlantilla->ctrPlantilla()
+#4 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 70
+[29-Aug-2023 19:39:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php:74
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php(75): ControladorWorks::ctrNuevoWork()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(24): ControladorPlantilla->ctrPlantilla()
+#4 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 74
+[29-Aug-2023 19:39:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php:74
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php(75): ControladorWorks::ctrNuevoWork()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(24): ControladorPlantilla->ctrPlantilla()
+#4 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 74
+[29-Aug-2023 19:42:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php:74
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php(75): ControladorWorks::ctrNuevoWork()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(24): ControladorPlantilla->ctrPlantilla()
+#4 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 74
+[29-Aug-2023 19:42:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php:74
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php(75): ControladorWorks::ctrNuevoWork()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(24): ControladorPlantilla->ctrPlantilla()
+#4 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 74
+[29-Aug-2023 19:43:06 Europe/Berlin] PHP Warning:  Undefined array key "informacion" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 145
+[29-Aug-2023 19:43:06 Europe/Berlin] PHP Warning:  Undefined variable $imagen in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 147
+[29-Aug-2023 19:43:06 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'informacion' cannot be null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php:24
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php(24): PDOStatement->execute()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php(152): ModeloWorks::mdlIngresarWork('works', Array)
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php(75): ControladorWorks::ctrNuevoWork()
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#4 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#5 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(24): ControladorPlantilla->ctrPlantilla()
+#6 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php on line 24
+[29-Aug-2023 19:43:35 Europe/Berlin] PHP Warning:  Undefined array key "informacion" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 145
+[29-Aug-2023 19:43:35 Europe/Berlin] PHP Warning:  Undefined variable $imagen in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 147
+[29-Aug-2023 19:43:35 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'informacion' cannot be null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php:24
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php(24): PDOStatement->execute()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php(152): ModeloWorks::mdlIngresarWork('works', Array)
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php(75): ControladorWorks::ctrNuevoWork()
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#4 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#5 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(24): ControladorPlantilla->ctrPlantilla()
+#6 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php on line 24
+[29-Aug-2023 19:43:47 Europe/Berlin] PHP Warning:  Undefined array key "informacion" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 145
+[29-Aug-2023 19:43:47 Europe/Berlin] PHP Warning:  Undefined variable $imagen in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 147
+[29-Aug-2023 19:43:47 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'informacion' cannot be null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php:24
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php(24): PDOStatement->execute()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php(152): ModeloWorks::mdlIngresarWork('works', Array)
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php(75): ControladorWorks::ctrNuevoWork()
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#4 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#5 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(24): ControladorPlantilla->ctrPlantilla()
+#6 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php on line 24
+[29-Aug-2023 19:44:35 Europe/Berlin] PHP Warning:  Undefined array key "informacion" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 145
+[29-Aug-2023 19:44:35 Europe/Berlin] PHP Warning:  Undefined variable $imagen in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 147
+[29-Aug-2023 19:44:35 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'informacion' cannot be null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php:24
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php(24): PDOStatement->execute()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php(152): ModeloWorks::mdlIngresarWork('works', Array)
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php(75): ControladorWorks::ctrNuevoWork()
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#4 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#5 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(24): ControladorPlantilla->ctrPlantilla()
+#6 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php on line 24
+[29-Aug-2023 19:45:04 Europe/Berlin] PHP Warning:  Undefined variable $imagen in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 147
+[29-Aug-2023 19:45:04 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'imagen' cannot be null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php:24
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php(24): PDOStatement->execute()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php(152): ModeloWorks::mdlIngresarWork('works', Array)
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\work.php(75): ControladorWorks::ctrNuevoWork()
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#4 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#5 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(24): ControladorPlantilla->ctrPlantilla()
+#6 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\work.modelo.php on line 24
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Undefined array key "artista" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 51
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Undefined array key "informacion" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 52
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Undefined array key "imagen" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 54
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 72
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 72
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 72
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 72
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Undefined array key "artista" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 51
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Undefined array key "informacion" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 52
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Undefined array key "imagen" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 54
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 72
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 72
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 72
+[29-Aug-2023 19:59:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 72
+[29-Aug-2023 20:03:45 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:03:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:03:45 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:03:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:04:32 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:04:32 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:04:32 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:04:32 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:13:52 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:13:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:13:52 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:13:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:14:55 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:14:55 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:14:55 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
+[29-Aug-2023 20:14:55 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 73
