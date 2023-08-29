@@ -1,97 +1,38 @@
 <?php
 
-class ControladorReel{
+class ControladorReels{
     
 	/*=============================================
 				SUBIR REEL
 	=============================================*/  
-	static public function ctrSubirReel() {    
-    
+	static public function ctrAgregarReel() {    
 		  
-			 if(isset($_POST['btnSubirVideo'])){
-			   
-			   
-			   if(isset($_FILES["video"]["tmp_name"]) && !empty($_FILES["video"]["tmp_name"])){
-				 
-				$micarpeta = "vistas/videos/";
-				   if (!file_exists($micarpeta)) {
-					   mkdir($micarpeta, 0777, true);
-				   };
-		 
-				 $maxsize = 70000000; // 70MB
-				 $nombre_file = $_FILES['video']['name'];
-				 $image_info = explode(".", $nombre_file); 
-				 $image_type = end($image_info);
-				 $file_video = time().".".$image_type;
-				 $target_dir = $micarpeta;
-				 $target_file = $target_dir.$file_video;
-	 
-				 $videoFileType = strtolower(pathinfo($nombre_file,PATHINFO_EXTENSION));
-	 
-				 // extensiones validados
-				 $extensions_arr = array("mp4","avi","3gp","mov","mpeg");
-	 
-				 // Revisar extension
-				 if( in_array($videoFileType,$extensions_arr) ){
+			 if(isset($_POST['btnSubirReel'])){
 
-					 
-					 // Revisar el tamaño del archivo
-					if(($_FILES['video']['size'] >= $maxsize) || ($_FILES["video"]["size"] == 0)) {
-						echo '<script>
-	
-						swal({
-							type: "success",
-							title: "Error al subir Video. Debe ser menor de 20mb",
-							showConfirmButton: true,
-							confirmButtonText: "Cerrar"
-							}).then(function(result) {
-										if (result.value) {
-	
-										history.back();
-	
-										}
-									})
-	
-						</script>';
-					}else{
-						// Subir
-						if(move_uploaded_file($_FILES['video']['tmp_name'],$target_file)){
-						//    $nombreVideo = strtoupper ( $_POST["nombreVideo"] );
-							$tabla = "videos";
-							$video = $file_video;
+				$tabla = "reels";
+
+				$datos = array(
+					"link" => $_POST["link"]
+				);
+
+
+				$respuesta = ModeloReels::mdlIngresarReel($tabla, $datos);
+				
+					if($respuesta == "ok"){
+
+						echo '<script>         
+								swal({
+									title: "Reel agregado!",
+									text: "EL Reel fue guardado satisfactoriamente!",
+									type: "success",
+									icon: "success",
+								}).then(function() {
+									window.location = "../reel";
+								});
 								
-						
-							$respuesta = ModeloVideos::mdlSubirVideo($tabla, $video);
-	
-						if($respuesta="ok"){
-	
-							echo '<script>
-	
-						swal({
-							type: "success",
-							title: "El video ha sido subido correctamente",
-							showConfirmButton: true,
-							confirmButtonText: "Cerrar"
-							}).then(function(result) {
-										if (result.value) {
-	
-												history.back();
-	
-	
-										}
-									})
-	
-						</script>';
-			
-						} 
-					
-	 
-						 }
-					 }
-	 
-					 $error= "la extension del archivo es invalido.";
-				 } 
-			 }
+							</script>';
+
+					}			   
 			 
 			 }
 	}
@@ -99,11 +40,11 @@ class ControladorReel{
 	/**************************************
 	 MOSTRAR REEL
 	***************************************/
-	static public function ctrMostrarReel(){
+	static public function ctrMostrarReels(){
 		
-		$tabla = "videos";
+		$tabla = "reels";
 
-		$respuesta = ModeloVideos::mdlMostrarVideos($tabla);
+		$respuesta = ModeloReels::mdlMostrarReels($tabla);
 
 		return $respuesta;
 
@@ -114,43 +55,29 @@ class ControladorReel{
 	***************************************/
 	static public function ctrBorrarReel(){
 
-		if(isset($_GET["idVideo"])){
+		if(isset($_GET["idReel"])){
 
-			$tabla ="videos";
+
+			$valor = $_GET["idReel"];
 			$item = "id";
-			$valor = $_GET["idVideo"];				
+			$tabla = "reels";
 
-			function rrmdir($dir) { 
-				if (is_dir($dir)) { 
-					$objects = scandir($dir); 
-					foreach ($objects as $object) { 
-					if ($object != "." && $object != "..") { 
-						if (filetype($dir."/".$object) == "dir") rrmdir($dir."/".$object); else unlink($dir."/".$object); 
-					} 
-					} 
-					reset($objects); 
-					rmdir($dir); 
-				} 
-				} 
-
-				unlink('vistas/videos/'.$_GET["rutaVideo"]);      
-
-			$respuesta = ModeloVideos::mdlBorrarVideo($tabla, $item, $valor);
+			$respuesta = ModeloReels::mdlBorrarReel($tabla, $item, $valor);
 
 			if($respuesta == "ok"){
 
 				echo '<script>  
 				
-				swal({
-					title: "Video eliminado!",
-					text: "El Video fue borrado satisfactoriamente!",
-					type: "success",
-					icon: "success"
-				}).then(function() {
-					history.back();
-				});               
-					
-				</script>';
+					swal({
+						title: "Reel eliminado!",
+						text: "El Reel fue borrado satisfactoriamente!",
+						type: "success",
+						icon: "success"
+					}).then(function() {
+						history.back();
+					});               
+						
+					</script>';
 		
 
 			}	

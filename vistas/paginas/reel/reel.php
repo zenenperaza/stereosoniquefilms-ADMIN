@@ -12,14 +12,16 @@
                 <div class="row">
                     <div class="content col-lg-9">
                         <h3>Alta de Reel</h3>
-                        <form method="post" enctype='multipart/form-data'>
-                        <div class="form-group">
-                                <label for="video">Seleccione Video</label>
-                                <input type="file" class="form-control-file" name="video" id="video" accept="video/*" required>
+                        <form method="post" >
+                    
+                        <div class="form-group row">
+                            <label for="link" class="col-3 col-form-label">Links Vimeo</label>
+                            <div class="col-9">
+                                <input class="form-control" type="text" placeholder="Escriba el link" name="link" id="link" required>
                             </div>
-                 
+                        </div>
                             
-                             <button type="submit"  name="btnSubirVideo" class="btn m-t-30 mt-3">Subir</button>
+                             <button type="submit"  name="btnSubirReel" class="btn m-t-30 mt-3">Guardar</button>
 
                           
                         </form>
@@ -33,7 +35,7 @@
                 <!-- DataTable -->
                 <div class="row mb-3">
                     <div class="col-lg-6">
-                        <h4>Videos</h4>
+                        <h4>Links</h4>
                     </div>
                
                 </div>
@@ -45,7 +47,7 @@
                             <thead>
                                 <tr role="row">
                                     <th>ID</th>
-                                    <th>Video</th>
+                                    <th>Link</th>
                                     <th>
                                         Acciones 
                                     </th>
@@ -55,31 +57,21 @@
                                 
                                     <?php
 
-                                        $videos = ControladorVideos::ctrMostrarVideos();
+                                        $reels = ControladorReels::ctrMostrarReels();
                                         // var_dump($videos);
-                                        foreach ($videos as $video) {
+                                        foreach ($reels as $reel) {
                                     ?>
                                     <tr role="row" class="odd">
 
                                 <td>
-                                <?php echo $video["id"]?>
+                                <?php echo $reel["id"]?>
                                 </td>
 
                                 <td>
-                                    <div class="row justify-content-center">
-                                        <div class="col-sm-6 ">
-                                            <video id="" class="video" controls poster="" >
-                                                <source src="<?php echo $ruta?>vistas/videos/<?php echo $video["video"]?>" type="video/mp4">
-                                                <source src="<?php echo $ruta?>vistas/videos/<?php echo $video["video"]?>" type="video/webm">   
-                                                <source src="<?php echo $ruta?>vistas/videos/<?php echo $video["video"]?>" type='video/mpg; codecs="avc1.42E01E, mp4a.40.2"'>                          
-                                                <source src="<?php echo $ruta?>vistas/videos/<?php echo $video["video"]?>" type='video/mpeg; codecs="avc1.42E01E, mp4a.40.2"'>
-                                                <source src="<?php echo $ruta?>vistas/videos/<?php echo $video["video"]?>" type="video/ogg">
-                                            </video>
-                                        </div>  
-                                    </div>
+                                 <a href="<?php echo $reel["link"]?>" target="_blank"><?php echo $reel["link"]?></a>
                                 </td>
                                 <td>
-                                <button  type="button" class="btn btn-block btn-danger btn-sm eliminar-video btnEliminarVideo" rutaVideo="<?php echo $video["video"]?>" idVideo="<?php echo $video["id"]?>">Eliminar video</button>
+                                <button  type="button" class="btn btn-block btn-danger btn-sm  btnEliminarReel"  idReel="<?php echo $reel["id"]?>">Eliminar reel</button>
                      
                                 </td>
        
@@ -95,7 +87,7 @@
                             <tfoot>
                                 <tr>                              
                                     <th>ID</th>
-                                    <th>Video</th>
+                                    <th>Link</th>
                                     <th>Acciones</th>
                                 </tr>
                             </tfoot>
@@ -109,16 +101,15 @@
                 <!-- end: DataTable -->
             </div>
         </section>
-<script>
-// /admin/vistas/paginas/inicio?idVideo=1&rutaVideo=vistas/videos/1693252274.mp4
-</script>
+        
+        <script src="plugins/sweetalert2/sweetalert2.all.js"></script>
         
     <?php 
 
-$videos = new ControladorVideos();
-$videos -> ctrSubirVideo();
+$reel = new ControladorReels();
+$reel -> ctrAgregarReel();
 
-$borrarVideo = new ControladorVideos();
-$borrarVideo -> ctrBorrarVideo();
+$borrarReel = new ControladorReels();
+$borrarReel -> ctrBorrarReel();
 
 ?>

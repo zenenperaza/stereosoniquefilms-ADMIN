@@ -27,6 +27,7 @@
                                     <th>Título</th>
                                     <th>Artista</th>
                                     <th>Informacion</th>
+                                    <th>Link</th>
                                     <th>Imagen</th>
                                     <th>Video</th>
                                     <th>Fecha Ingreso</th>
@@ -51,21 +52,28 @@
                                 <th><?php echo $work["titulo"]?></th>
                                 <th><?php echo $work["artista"]?></th>
                                 <th><?php echo $work["informacion"]?></th>
+                                <th><a href="<?php echo $work["link"]?>" target="_blank"><?php echo $work["link"]?></a></th>
                                 <th>
-                                    <img src="<?php echo $ruta?>vistas/img/works/<?php echo $work["imagen"]?>" class="img-fluid rounded-circle " style="width:100px">
+                                    <a href="<?php echo $ruta?>vistas/img/works/<?php echo $work["imagen"]?>" target="_blank">
+                                        <img src="<?php echo $ruta?>vistas/img/works/<?php echo $work["imagen"]?>" class="img-fluid rounded-circle " style="width:100px">
+                                    </a>
                                 </th>
                                 <td>
 
                                     <div class="row justify-content-center">
-                                        <div class="col-sm-6 ">
-                                            <video id="" class="video" controls poster="" >
-                                                <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type="video/mp4">
-                                                <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type="video/webm">   
-                                                <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type='video/mpg; codecs="avc1.42E01E, mp4a.40.2"'>                          
-                                                <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type='video/mpeg; codecs="avc1.42E01E, mp4a.40.2"'>
-                                                <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type="video/ogg">
-                                            </video>
-                                        </div>  
+                                        <a href="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" target="_blank">
+                                            <div class="col-sm-6 ">
+                                            
+                                                    <video id="" class="video" controls poster="" >
+                                                        <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type="video/mp4">
+                                                        <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type="video/webm">   
+                                                        <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type='video/mpg; codecs="avc1.42E01E, mp4a.40.2"'>                          
+                                                        <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type='video/mpeg; codecs="avc1.42E01E, mp4a.40.2"'>
+                                                        <source src="<?php echo $ruta?>vistas/videos/works/<?php echo $work["video"]?>" type="video/ogg">
+                                                    </video>
+                                            
+                                            </div> 
+                                        </a> 
                                     </div>
                                 </td>
                                 <th><?php echo $work["fecha"]?></th>
@@ -88,6 +96,7 @@
                                     <th>Título</th>
                                     <th>Artista</th>
                                     <th>Informacion</th>
+                                    <th>Link</th>
                                     <th>Imagen</th>
                                     <th>Video</th>
                                     <th>Fecha Ingreso</th>

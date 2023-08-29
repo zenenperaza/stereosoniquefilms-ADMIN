@@ -1,4 +1,32 @@
 /*=============================================
+ELIMINAR  reels
+=============================================*/
+$(".btnEliminarReel").click(function() {
+  
+  var idReel = $(this).attr("idReel");
+  
+  swal({
+    title: '¿Está seguro de borrar el Reel?',
+    text: "¡Si no lo está puede cancelar la accíón!",
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      cancelButtonText: 'Cancelar',
+      confirmButtonText: 'Si, borrar Reel!'
+  }).then(function(result){
+
+    if(result.value){
+
+      window.location = "../reel?idReel="+idReel;
+
+    }
+
+  })
+
+})
+
+/*=============================================
 ELIMINAR VIDEO
 =============================================*/
 $(".btnEliminarVideo").click(function() {

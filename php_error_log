@@ -190,3 +190,19 @@ Stack trace:
 [29-Aug-2023 22:09:43 Europe/Berlin] PHP Warning:  unlink(vistas/videos/works/1693331156.mp4): No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 202
 [29-Aug-2023 22:09:43 Europe/Berlin] PHP Warning:  unlink(vistas/img/works/1693331156.png): No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 203
 [29-Aug-2023 22:55:14 Europe/Berlin] PHP Warning:  imagejpeg(vistas/img/works/1693342514.jpg): Failed to open stream: Permission denied in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 59
+[30-Aug-2023 00:10:22 Europe/Berlin] PHP Warning:  unlink(vistas/img/works/1693342514.jpg): No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\work.controlador.php on line 199
+[30-Aug-2023 00:35:36 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db.reel' doesn't exist in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\reel.modelo.php:19
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\reel.modelo.php(19): PDOStatement->execute()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\reel.controlador.php(19): ModeloReels::mdlIngresarReel('reel', Array)
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\reel\reel.php(111): ControladorReels::ctrAgregarReel()
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(109): include('D:\\GD zenenalex...')
+#4 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#5 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(27): ControladorPlantilla->ctrPlantilla()
+#6 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\modelos\reel.modelo.php on line 19
+[30-Aug-2023 00:36:23 Europe/Berlin] PHP Warning:  Undefined array key "id" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\reel\reel.php on line 67
+[30-Aug-2023 00:36:23 Europe/Berlin] PHP Warning:  Undefined array key "link" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\reel\reel.php on line 71
+[30-Aug-2023 00:36:23 Europe/Berlin] PHP Warning:  Undefined array key "link" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\reel\reel.php on line 71
+[30-Aug-2023 00:36:23 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\reel\reel.php on line 74
+[30-Aug-2023 00:36:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\reel\reel.php on line 74
