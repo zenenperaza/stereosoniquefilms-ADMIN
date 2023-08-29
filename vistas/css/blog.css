@@ -1,0 +1,108 @@
+#header{
+    height: auto;
+}
+p {
+
+     margin-bottom: 0px !important; 
+     margin-top: 0px !important; 
+}
+h2:not(:last-child) {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.grid-articles-v2 .post-entry {
+    width: 25%;
+    margin-left:0%;
+    margin-top: 0%;
+}
+.grid-articles-v2 .principal {
+    width: 49.75% !important;
+    margin-bottom:2.5px !important;  
+
+}
+.grid-articles-v2 .principal2 {
+    width: 49.75% !important;    
+    margin-left:2.5px !important;
+    margin-bottom:2.5px !important;
+}
+.grid-articles-v2 .secundaria {
+    width: 24.75% !important;    
+    margin-left:2.5px !important;
+    margin-bottom:2.5px !important;
+}
+/*para que grid de articulos  tenga altura fija*/
+.post-item .post-item-description_sobreescribe {
+    
+    height: 270px !important;
+}
+.post-item-description_sobreescribe h2 {
+    
+  display: block !important;
+  display: -webkit-box !important;
+  max-width: 100% !important;
+  margin-bottom: 15px;
+  max-height: 85px !important;
+  margin: 0 auto !important;
+  font-size: 14px !important;
+  
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+   
+}
+.metadescripcion{
+    
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 90px;
+  margin: 0 auto;
+  font-size: 14px;
+  
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#editor h1,#editor h2,#editor h3,#editor h4{
+    margin-bottom: 15px!important;
+    margin-top: 15px!important;
+}
+#elcontenido h1,#elcontenido h2,#elcontenido h3,#elcontenido h4{
+    margin-bottom: 15px!important;
+    margin-top: 15px!important;
+}
+#editor i:not(.fa):not(.fab):not(.far):not(.fas){
+    font-family: sans-serif!important;    
+    font-style: italic!important;
+}
+#elcontenido i:not(.fa):not(.fab):not(.far):not(.fas){
+    font-family: sans-serif!important;    
+    font-style: italic!important;
+}
+
+#elcontenido ul li,#editor ul li {
+    color:black!important;
+    margin-left:30px!important;
+    font-size: 16px;
+    
+}
+@media (min-width: 0px) and (max-width: 976px) {
+
+    .grid-articles-v2:not(.post-carousel) .post-entry {
+
+        margin-left: 0px !important;
+        margin-bottom: 2.5px !important;
+        margin-top: 0% !important;
+    }
+    .grid-articles-v2 .secundaria {
+        width: 49.75% !important;    
+        margin-left:1px !important;
+        margin-bottom:0px !important;
+    }
+
+}
