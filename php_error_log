@@ -268,3 +268,7 @@ Stack trace:
 [30-Aug-2023 16:14:37 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 64
 [30-Aug-2023 16:36:25 Europe/Berlin] PHP Warning:  unlink(vistas/img/contents/1693405509.png): No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\content.controlador.php on line 145
 [30-Aug-2023 16:36:42 Europe/Berlin] PHP Warning:  unlink(vistas/img/contents/1693405295.png): No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\content.controlador.php on line 145
+[30-Aug-2023 17:34:06 Europe/Berlin] PHP Warning:  Undefined variable $content in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 59
+[30-Aug-2023 17:34:06 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 59
+[30-Aug-2023 17:34:06 Europe/Berlin] PHP Warning:  Undefined variable $content in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 59
+[30-Aug-2023 17:34:06 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\work\acciones\listar.php on line 59

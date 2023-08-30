@@ -50,7 +50,16 @@
                                 <?php echo $content["id"]?>
                                 </td>
                                 <th><?php echo $content["titulo"]?></th>
-                                <th><?php echo $content["descripcion"]?></th>
+                                <th>                    
+                                    <div class="accordion">
+                                        <div class="ac-item">
+                                            <h5 class="ac-title m-1">Ver </h5>
+                                            <div class="ac-content" style='width:max-content'>
+                                                <p ><?php echo $content["descripcion"]?> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
                                 <th><?php echo $content["cargo"]?></th>
                                 <th><a href="<?php echo $content["imdb"]?>" target="_blank" class="btn btn-info">IMDB</a></th>
                                 <th><a href="<?php echo $content["trailer"]?>" target="_blank" class="btn btn-danger">Trailer</a></th>

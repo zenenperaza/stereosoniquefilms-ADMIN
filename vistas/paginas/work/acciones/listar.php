@@ -51,7 +51,15 @@
                                 </td>
                                 <th><?php echo $work["titulo"]?></th>
                                 <th><?php echo $work["artista"]?></th>
-                                <th><?php echo $work["informacion"]?></th>
+                                <th>                                    
+                                    <div class="accordion">
+                                        <div class="ac-item">
+                                            <h5 class="ac-title m-1">Ver </h5>
+                                            <div class="ac-content " style='width:max-content'>
+                                                <p ><?php echo $work["informacion"]?> </p>
+                                            </div>
+                                        </div>
+                                    </div></th>
                                 <th><a href="<?php echo $work["link"]?>" target="_blank"><?php echo $work["link"]?></a></th>
                                 <th>
                                     <a href="<?php echo $ruta?>vistas/img/works/<?php echo $work["imagen"]?>" target="_blank">
