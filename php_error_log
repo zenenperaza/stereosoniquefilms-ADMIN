@@ -206,3 +206,65 @@ Stack trace:
 [30-Aug-2023 00:36:23 Europe/Berlin] PHP Warning:  Undefined array key "link" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\reel\reel.php on line 71
 [30-Aug-2023 00:36:23 Europe/Berlin] PHP Warning:  Undefined variable $video in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\reel\reel.php on line 74
 [30-Aug-2023 00:36:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\reel\reel.php on line 74
+[30-Aug-2023 15:38:12 Europe/Berlin] PHP Warning:  include(paginas/content/content.php): Failed to open stream: No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php on line 110
+[30-Aug-2023 15:38:12 Europe/Berlin] PHP Warning:  include(): Failed opening 'paginas/content/content.php' for inclusion (include_path='D:\xampp82\php\PEAR') in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php on line 110
+[30-Aug-2023 15:39:04 Europe/Berlin] PHP Warning:  include(paginas/contents/contents.php): Failed to open stream: No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php on line 110
+[30-Aug-2023 15:39:04 Europe/Berlin] PHP Warning:  include(): Failed opening 'paginas/contents/contents.php' for inclusion (include_path='D:\xampp82\php\PEAR') in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php on line 110
+[30-Aug-2023 15:39:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ControladorContents" not found in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php:42
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\contents.php(51): include()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(110): include('D:\\GD zenenalex...')
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(27): ControladorPlantilla->ctrPlantilla()
+#4 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 42
+[30-Aug-2023 15:41:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method ControladorContents::ctrMostrarContents() in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php:42
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\contents.php(51): include()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(110): include('D:\\GD zenenalex...')
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(30): ControladorPlantilla->ctrPlantilla()
+#4 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 42
+[30-Aug-2023 15:41:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method ControladorContents::ctrMostrarContents() in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php:42
+Stack trace:
+#0 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\contents.php(51): include()
+#1 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\plantilla.php(110): include('D:\\GD zenenalex...')
+#2 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\plantilla.controlador.php(7): include('D:\\GD zenenalex...')
+#3 D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\index.php(30): ControladorPlantilla->ctrPlantilla()
+#4 {main}
+  thrown in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 42
+[30-Aug-2023 15:41:33 Europe/Berlin] PHP Warning:  Undefined variable $Contents in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 45
+[30-Aug-2023 15:41:33 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 45
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "artista" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 53
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "informacion" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 54
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "link" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 55
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "link" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 55
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 64
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 68
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 69
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 70
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 71
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 72
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 81
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "artista" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 53
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "informacion" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 54
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "link" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 55
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "link" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 55
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 64
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 68
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 69
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 70
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 71
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 72
+[30-Aug-2023 16:06:17 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 81
+[30-Aug-2023 16:11:42 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 66
+[30-Aug-2023 16:11:42 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 66
+[30-Aug-2023 16:12:50 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 66
+[30-Aug-2023 16:12:50 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 66
+[30-Aug-2023 16:13:27 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 66
+[30-Aug-2023 16:13:27 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 66
+[30-Aug-2023 16:14:37 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 64
+[30-Aug-2023 16:14:37 Europe/Berlin] PHP Warning:  Undefined array key "video" in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\vistas\paginas\contents\acciones\listar.php on line 64
+[30-Aug-2023 16:36:25 Europe/Berlin] PHP Warning:  unlink(vistas/img/contents/1693405509.png): No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\content.controlador.php on line 145
+[30-Aug-2023 16:36:42 Europe/Berlin] PHP Warning:  unlink(vistas/img/contents/1693405295.png): No such file or directory in D:\GD zenenalexis\www\PROYECTOS MEXICO\stereosoniquefilms.com\admin\controladores\content.controlador.php on line 145

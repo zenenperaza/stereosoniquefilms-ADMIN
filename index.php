@@ -20,6 +20,9 @@ require_once "modelos/work.modelo.php";
 require_once "controladores/reel.controlador.php";
 require_once "modelos/reel.modelo.php";
 
+require_once "controladores/content.controlador.php";
+require_once "modelos/content.modelo.php";
+
 require_once "controladores/videos.controlador.php";
 require_once "modelos/videos.modelo.php";
 

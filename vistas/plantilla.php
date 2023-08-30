@@ -104,6 +104,7 @@ $ruta = ControladorRuta::ctrRuta();
            $routesArray[4] == "videos" ||
            $routesArray[4] == "work" ||
            $routesArray[4] == "reel" ||
+           $routesArray[4] == "contents" ||
             $routesArray[4] == "salir"){  
           
           include "paginas/".$routesArray[4]."/".$routesArray[4].".php";       

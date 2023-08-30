@@ -18,7 +18,8 @@
                             <li><a href="../videos">VIDEOS</a></li>
                             <li><a href="../work">WORK</a></li>
                             <li><a href="../reel">REEL</a></li>
-                            <div></div>
+                            <li><a href="../contents">CONTENT</a></li>
+                            <hr>
                             <li><a href="../salir">SALIR</a></li>
                            
                             

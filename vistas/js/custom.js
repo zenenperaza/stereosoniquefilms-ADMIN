@@ -1,4 +1,32 @@
 /*=============================================
+ELIMINAR  CONTENT
+=============================================*/
+$(".btnEliminarContent").click(function() {
+  
+  var idContent = $(this).attr("idContent");
+  var rutaImagen = $(this).attr("rutaImagen");
+  
+  swal({
+    title: '¿Está seguro de borrar el Content?',
+    text: "¡Si no lo está puede cancelar la accíón!",
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      cancelButtonText: 'Cancelar',
+      confirmButtonText: 'Si, borrar Content!'
+  }).then(function(result){
+
+  if(result.value){
+
+    window.location = "../contents?idContent="+idContent+"&rutaImagen="+rutaImagen;
+
+  }
+
+  })
+
+})
+/*=============================================
 ELIMINAR  reels
 =============================================*/
 $(".btnEliminarReel").click(function() {
