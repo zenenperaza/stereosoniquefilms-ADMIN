@@ -44,12 +44,12 @@ class ModeloUsuarios{
 	static public function mdlIngresarUsuario($tabla, $datos){
 
 		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla 
-    (cedula, nombre, apellido, fecha_nacimiento, sexo, nacionalidad, estado, municipio, direccion) VALUES 
-    (:cedula, :nombre, :apellido, :fecha_nacimiento, :sexo, :nacionalidad, :estado, :municipio, :direccion)");
+			(cedula, nombre, apellido, fecha_nacimiento, sexo, nacionalidad, estado, municipio, direccion) VALUES 
+			(:cedula, :nombre, :apellido, :fecha_nacimiento, :sexo, :nacionalidad, :estado, :municipio, :direccion)");
 
 		$stmt->bindParam(":cedula", $datos["cedula"], PDO::PARAM_STR);
-    $stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
-    $stmt->bindParam(":apellido", $datos["apellido"], PDO::PARAM_STR);
+		$stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
+		$stmt->bindParam(":apellido", $datos["apellido"], PDO::PARAM_STR);
 		$stmt->bindParam(":fecha_nacimiento", $datos["fecha_nacimiento"], PDO::PARAM_STR);
 		$stmt->bindParam(":sexo", $datos["sexo"], PDO::PARAM_STR);
 		$stmt->bindParam(":nacionalidad", $datos["nacionalidad"], PDO::PARAM_STR);
@@ -63,8 +63,7 @@ class ModeloUsuarios{
 
 		}else{
 
-			return "error";
-		
+			return "error";		
 		}
 
 		$stmt->close();

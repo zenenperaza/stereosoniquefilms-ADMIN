@@ -80,6 +80,7 @@ $ruta = ControladorRuta::ctrRuta();
 <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/functions.js"></script>
+    <script src="js/login.js"></script>
 
 </body>
 

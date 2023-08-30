@@ -45,13 +45,13 @@ class ControladorUsuarios{
 
 						}		else{
 
-					echo '<div class="alert alert-danger">Error al ingresar. <br> Datos incorrectos, vuelve a intentarlo </div>';
+					echo '<div class="alert alert-danger error-ingreso">Error al ingresar. <br> Datos incorrectos, vuelve a intentarlo </div>';
 
 				}
 
 				} 
 				else {
-					echo '<div class="alert alert-danger">Error al ingresar. <br> Datos incorrectos, vuelve a intentarlo </div>';
+					echo '<div class="alert alert-danger error-ingreso">Error al ingresar. <br> Datos incorrectos, vuelve a intentarlo </div>';
 				}
 
 				

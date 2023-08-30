@@ -20,7 +20,7 @@
                                     <div class="form-group">
                                         <label for="email">Email address</label>
                                         <div class="input-group">
-                                        <input type="email" class="form-control" name="email" placeholder="Enter your email" required="">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required="" autofocus>
                                         <span class="input-group-text"><i class="icon-user"></i></span>
                                     </div>
                                     </div>
@@ -45,3 +45,6 @@
         <!-- end: Section -->
     </div>
 
+<script>
+
+</script>
